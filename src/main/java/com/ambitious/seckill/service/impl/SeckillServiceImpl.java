@@ -35,17 +35,15 @@ public class SeckillServiceImpl implements SeckillService {
 	@Autowired
 	SuccessKilledDao successKilledDao;
 	
-	@Override
 	public List<Seckill> getSeckillList() {
 		return seckillDao.queryAll(0, 10);
 	}
 
-	@Override
 	public Seckill getById(long seckillId) {
 		return seckillDao.queryById(seckillId);
 	}
 
-	@Override
+	
 	/**
 	 * 返回商品的秒杀接口，如未开始秒杀，返回系统时间和秒杀时间
 	 */
@@ -66,7 +64,6 @@ public class SeckillServiceImpl implements SeckillService {
 		return new Exposer(true, md5,seckillId);
 	}
 
-	@Override
 	@Transactional
 	public SeckillExecution executeSeckill(long seckillId, long userPhone, String md5)
 			throws SeckillException, SeckillCloseException, RepeatKillException {
