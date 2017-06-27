@@ -1,4 +1,4 @@
-package com.ambitious.seckill;
+package com.ambitious.seckill.service.impl;
 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.RunWith;
@@ -15,8 +15,7 @@ import org.junit.runners.Suite;
  */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-	com.ambitious.seckill.dao.TestAll.class,
-	com.ambitious.seckill.service.TestAll.class,
+	SeckillServiceImplTest.class,
 })
 public class TestAll {
 
