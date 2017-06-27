@@ -27,7 +27,7 @@ public interface SeckillDao {
 	 * @param seckillID
 	 * @return
 	 */
-	Seckill queryById(long seckillID);
+	Seckill queryById(long seckillId);
 	
 	/**
 	 * 根据偏移量查询秒杀商品列表
