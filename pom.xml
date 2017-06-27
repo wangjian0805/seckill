@@ -89,6 +89,7 @@
 
         <!--4:spring依赖-->
         <!--1)spring核心依赖-->
+        
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
@@ -140,7 +141,7 @@
         </dependency>
 
     </dependencies>
-    
+    	
     <build>
 		<!-- 配置插件 -->
 		<plugins>
